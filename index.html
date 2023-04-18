@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Icon Web Page -->
+    <link rel="icon" href="#">
+    <!-- Title WebSite -->
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-details">
+            <span class="score">Score: 0</span>
+            <span class="high-score">High Score: 0</span>
+        </div>
+
+        <div class="play-board"></div>
+    
+        <div class="controls">
+            <i data-key="ArrowLeft">
+                <span class="material-icons-sharp">west</span>
+            </i>
+            <i data-key="ArrowUp">
+                <span class="material-icons-sharp">north</span>
+            </i>
+            <i data-key="ArrowDown">
+                <span class="material-icons-sharp">south</span>
+            </i>
+            <i data-key="ArrowRight">
+                <span class="material-icons-sharp">east</span>
+            </i>
+        </div>
+    </div>
+
+    <div class="modal-gameover" id="modal-gameover">
+        <h3>Juego terminado</h3>
+        <p>
+            Presiona el botón para volver a jugar
+        </p>
+        <div class="btn-container">
+            <button class="btn-modal" onclick="toggleGame()">Continuar</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
